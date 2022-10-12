@@ -6,7 +6,7 @@ import Trusted from "./components/Trusted";
 import FeatureProduct from "./components/featureProduct";
 const Home = () => {
   const data = {
-    name: "My Grand Store",
+    name: "WOWZ Store",
   };
   return (
     <>
