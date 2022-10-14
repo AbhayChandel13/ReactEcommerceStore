@@ -21,6 +21,7 @@ const AppProvider = ({ children }) => {
     try {
       const res = await axios.get(url);
       const products = await res.data;
+    //  console.log("Products",products)
       dispatch({ type: "SET_API_DATA", payload: products });
     } catch (error) {
       dispatch({ type: "API_ERROR" });
@@ -34,6 +35,7 @@ const AppProvider = ({ children }) => {
     try {
       const res = await axios.get(url);
       const singleProduct = await res.data;
+    //  console.log("singleProd",singleProduct)
       dispatch({ type: "SET_SINGLE_PRODUCT", payload: singleProduct });
     } catch (error) {
       dispatch({ type: "SET_SINGLE_ERROR" });
