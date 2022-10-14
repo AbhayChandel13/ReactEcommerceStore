@@ -8,7 +8,8 @@ import FormatPrice from "./Helpers/FormatPrice";
 import MyImage from "./components/MyImage";
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
-import Star from "./components/Star"
+import Star from "./components/Star";
+import AddToCart from "./components/AddToCart";
 
 const API = "https://api.pujakaitem.com/api/products";
 
@@ -34,7 +35,7 @@ useEffect(() => {
 }, []);
 
 if (isSingleLoading) {
-  return <div className="page_loading">Loading.....</div>;
+  return <div className="page_loading"><h4>....Loading</h4></div>;
 }
 
   return (
@@ -76,8 +77,8 @@ if (isSingleLoading) {
 
               <div className="product-warranty-data">
                 <TbTruckDelivery className="warranty-icon" />
-                <p>Thapa Delivered </p>
-              </div>
+                <p>Ekart Delivery </p>
+              </div> 
 
               <div className="product-warranty-data">
                 <MdSecurity className="warranty-icon" />
@@ -97,6 +98,8 @@ if (isSingleLoading) {
                 Brand :<span> {company} </span>
               </p>
             </div>
+            <hr />
+            {stock > 0 && <AddToCart product={singleProduct} /> }
           </div>
         </div>
       </Container>
