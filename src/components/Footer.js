@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <Button className="btn hireme-btn">
+              <Button className="btn">
                 <NavLink to="/"> Get Started </NavLink>
               </Button>
             </div>
@@ -51,6 +51,7 @@ const Footer = () => {
                   <a
                     href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FaYoutube className="icons" />
                   </a>
