@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  text-decoration: none;
+.btn{text-decoration: none;
   max-width: auto;
   background-color: rgb(98 84 243);
   color: rgb(255 255 255);
@@ -14,6 +14,8 @@ export const Button = styled.button`
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
+}
+
 
   &:hover,
   &:active {

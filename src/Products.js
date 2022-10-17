@@ -11,7 +11,7 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    .grid-filter-column {
+    .grid-filter-column { 
       grid-template-columns: 1fr;
     }
   }
