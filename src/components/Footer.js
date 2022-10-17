@@ -50,7 +50,8 @@ const Footer = () => {
                 <div>
                   <a
                     href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank">
+                    target="_blank"
+                  >
                     <FaYoutube className="icons" />
                   </a>
                 </div>
@@ -66,7 +67,8 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} My Ecommerce Store. All Rights Reserved
+                @{new Date().getFullYear()} My Ecommerce Store. All Rights
+                Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>
