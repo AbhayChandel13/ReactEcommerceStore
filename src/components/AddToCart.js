@@ -42,9 +42,12 @@ const AddToCart = ({ product }) => {
         setIncrease={setIncrease}
       />
 
-     
-        <Button> <NavLink to="/cart" className="btn">Add To Cart </NavLink></Button>
-     
+      <Button>
+        {" "}
+        <NavLink to="/cart" className="btn">
+          Add To Cart{" "}
+        </NavLink>
+      </Button>
     </Wrapper>
   );
 };
