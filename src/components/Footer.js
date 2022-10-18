@@ -7,7 +7,7 @@ import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <Wrapper>
+    <Wrapper>
         <section className="contact-short">
           <div className="grid grid-two-column">
             <div>
@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <Button className="btn">
+              <Button className="btn hireme-btn">
                 <NavLink to="/"> Get Started </NavLink>
               </Button>
             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Tech Store </h3>
+              <h3>Thapa Technical</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
             </div>
             <div className="footer-subscribe">
@@ -50,9 +50,7 @@ const Footer = () => {
                 <div>
                   <a
                     href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                    target="_blank">
                     <FaYoutube className="icons" />
                   </a>
                 </div>
@@ -60,7 +58,7 @@ const Footer = () => {
             </div>
             <div className="footer-contact">
               <h3>Call Us</h3>
-              <h3>+91 3254564567</h3>
+              <h3>+91 12345678978</h3>
             </div>
           </div>
 
@@ -68,8 +66,7 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} My Ecommerce Store. All Rights
-                Reserved
+                @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>

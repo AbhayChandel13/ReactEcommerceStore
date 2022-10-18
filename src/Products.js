@@ -1,8 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import FilterSection from "./components/FilterSection";
 
 const Products = () => {
-  return <Wrapper></Wrapper>;
+  return <Wrapper>
+    <div className="container grid grid-filter-column">
+      <div> 
+        <FilterSection />
+      </div>
+    </div>
+  </Wrapper>;
 };
 
 const Wrapper = styled.section`
