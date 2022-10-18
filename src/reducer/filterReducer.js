@@ -7,7 +7,7 @@ const filterReducer = (state,action)=> {
                     all_products: [...action.payload]
                 };
 
-            case "SET_GRIDVEIW":
+            case "SET_GRIDVIEW":
                 return{
                     ...state,
                     grid_view :true,

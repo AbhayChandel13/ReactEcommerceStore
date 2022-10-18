@@ -4,8 +4,7 @@ import { BsFillGridFill, BsList } from "react-icons/bs";
 import { useFilterContext } from "../context/filter_context";
 
 const Sort = () => {
-  const { filter_products, grid_view, setGridView, setListView, sorting } =
-    useFilterContext();
+  const { filter_products, grid_view, setGridView, setListView, sorting } = useFilterContext();
   return (
     <Wrapper className="sort-section">
       {/* 1st column  */}
@@ -17,7 +16,7 @@ const Sort = () => {
         </button>
 
         <button
-          className={!grid_view ? "active sort-btn" : " sort-btn"}
+          className={!grid_view ? "active sort-btn" : "sort-btn"}
           onClick={setListView}>
           <BsList className="icon" />
         </button>
