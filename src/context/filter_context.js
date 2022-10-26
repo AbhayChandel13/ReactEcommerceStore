@@ -24,16 +24,15 @@ export const FilterContextProvider = ({ children }) => {
     return dispatch({ type: "SET_LIST_VIEW" });
   };
 
-  //sorting function 
+  //sorting function
   const sorting = (event) => {
     let userValue = event.target.value;
-    dispatch({ type: "GET_SORT_VALUE",payload : userValue });
+    dispatch({ type: "GET_SORT_VALUE", payload: userValue });
   };
 
-
- //To Sort the products
+  //To Sort the products
   useEffect(() => {
-   dispatch({type:"SORTING_PRODUCTS", payload: products});
+    dispatch({ type: "SORTING_PRODUCTS", payload: products });
   }, [state.sorting_value]);
 
   useEffect(() => {

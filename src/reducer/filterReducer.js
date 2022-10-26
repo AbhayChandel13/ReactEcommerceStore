@@ -14,7 +14,7 @@ const filterReducer = (state, action) => {
       };
 
     case "SET_LIST_VIEW":
-      return {  
+      return {
         ...state,
         grid_view: false,
       };
@@ -30,33 +30,29 @@ const filterReducer = (state, action) => {
 
     case "SORTING_PRODUCTS":
       let newSortData;
-      const {filter_products,sorting_value} = state;
+      const { filter_products, sorting_value } = state;
       let tempSortProducts = [...filter_products];
 
-         const sortingProducts = (a,b) =>{
+      const sortingProducts = (a, b) => {
+        if (sorting_value === "lowest") {
+          return a.price - b.price;
+        }
 
-            if (sorting_value === "lowest") {
-              return a.price - b.price;
-            };
+        if (sorting_value === "highest") {
+          return b.price - a.price;
+        }
 
-            if (sorting_value === "highest") {
-              return b.price - a.price;
-            }
+        if (sorting_value === "a-z") {
+          return a.name.localeCompare(b.name);
+        }
 
-            if (sorting_value === "a-z") {
-            return  a.name.localeCompare(b.name)
-            }
+        if (sorting_value === "z-a") {
+          return b.name.localeCompare(a.name);
+        }
+      };
 
-            if (sorting_value === "z-a") {  
-              return  b.name.localeCompare(a.name)
-            }
+      newSortData = tempSortProducts.sort(sortingProducts);
 
-         };
-
-         newSortData = tempSortProducts.sort(sortingProducts);
-    
-
-    
       return {
         ...state,
         filter_products: newSortData,
