@@ -14,48 +14,49 @@ const filterReducer = (state, action) => {
       };
 
     case "SET_LIST_VIEW":
-      return {
+      return {  
         ...state,
         grid_view: false,
       };
 
     case "GET_SORT_VALUE":
-      let userSortValue = document.getElementById("sort");
-      let sort_value = userSortValue.options[userSortValue.selectedIndex].value;
-      console.log(sort_value);
+      // let userSortValue = document.getElementById("sort");
+      // let sort_value = userSortValue.options[userSortValue.selectedIndex].value;
+      // console.log(sort_value);
       return {
         ...state,
-        sorting_value: sort_value,
+        sorting_value: action.payload,
       };
 
     case "SORTING_PRODUCTS":
       let newSortData;
-      let tempSortProducts = [...action.payload];
+      const {filter_products,sorting_value} = state;
+      let tempSortProducts = [...filter_products];
 
-      if (state.sorting_value === "lowest") {
-        const sortingProducts = (a, b) => {
-          return a.price - b.price;
-        };
-        newSortData = tempSortProducts.sort(sortingProducts);
-      }
-      if (state.sorting_value === "highest") {
-        const sortingProducts = (a, b) => {
-          return b.price - a.price;
-        };
-        newSortData = tempSortProducts.sort(sortingProducts);
-      }
+         const sortingProducts = (a,b) =>{
 
-      if (state.sorting_value === "a-z") {
-        newSortData = tempSortProducts.sort((a, b) =>
-          a.name.localeCompare(b.name)
-        );
-      }
+            if (sorting_value === "lowest") {
+              return a.price - b.price;
+            };
 
-      if (state.sorting_value === "z-a") {
-        newSortData = tempSortProducts.sort((a, b) =>
-          b.name.localeCompare(a.name)
-        );
-      }
+            if (sorting_value === "highest") {
+              return b.price - a.price;
+            }
+
+            if (sorting_value === "a-z") {
+            return  a.name.localeCompare(b.name)
+            }
+
+            if (sorting_value === "z-a") {  
+              return  b.name.localeCompare(a.name)
+            }
+
+         };
+
+         newSortData = tempSortProducts.sort(sortingProducts);
+    
+
+    
       return {
         ...state,
         filter_products: newSortData,
