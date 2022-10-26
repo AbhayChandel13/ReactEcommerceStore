@@ -23,12 +23,16 @@ export const FilterContextProvider = ({ children }) => {
   const setListView = () => {
     return dispatch({ type: "SET_LIST_VIEW" });
   };
+
+  //sorting function 
   const sorting = () => {
     dispatch({ type: "GET_SORT_VALUE" });
   };
 
+
+ //To Sort the products
   useEffect(() => {
-    sorting();
+   dispatch({type:"SORTING_PRODUCTS", payload: products});
   }, [state.sorting_value]);
 
   useEffect(() => {
