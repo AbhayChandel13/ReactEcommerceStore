@@ -45,7 +45,7 @@ export const FilterContextProvider = ({ children }) => {
     <FilterContext.Provider
       value={{ ...state, setGridView, setListView, sorting }}
     >
-      {children} q qqqq
+      {children}
     </FilterContext.Provider>
   );
 };
