@@ -3,7 +3,10 @@ import styled from "styled-components";
 import { useFilterContext } from "../context/filter_context";
 
 const FilterSection = () => {
-  const { filters: {text}, updateFilterValue ,} = useFilterContext();
+  const {
+    filters: { text },
+    updateFilterValue,
+  } = useFilterContext();
   return (
     <Wrapper>
       <div className="filter-search">
