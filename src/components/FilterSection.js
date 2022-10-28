@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useFilterContext } from "../context/filter_context";
 
 const FilterSection = () => {
-  const { filters: text, updateFilterValue } = useFilterContext;
+  const { filters: {text}, updateFilterValue ,} = useFilterContext();
   return (
     <Wrapper>
       <div className="filter-search">
@@ -11,8 +11,8 @@ const FilterSection = () => {
           <input
             type="text"
             name="text"
-            //value={text}
-            //onChange={updateFilterValue}
+            value={text}
+            onChange={updateFilterValue}
           />
         </form>
       </div>

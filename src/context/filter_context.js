@@ -40,7 +40,7 @@ export const FilterContextProvider = ({ children }) => {
     let value = event.target.value;
 
     return dispatch({
-      type: "UPDATE_FILTERS_PRODUCTS",
+      type: "UPDATE_FILTERS_VALUE",
       payload: { name, value },
     });
   };
