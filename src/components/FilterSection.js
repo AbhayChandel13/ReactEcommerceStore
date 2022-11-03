@@ -10,7 +10,7 @@ const FilterSection = () => {
   } = useFilterContext();
 
   // get the unique values of each property
-  
+
   const getUniqueData = (data, attr) => {
     let newVal = data.map((curElem) => {
       return curElem[attr];
@@ -58,7 +58,8 @@ const FilterSection = () => {
                 name="category"
                 value={curElem}
                 className={curElem === category ? "active" : ""}
-                onClick={updateFilterValue}>
+                onClick={updateFilterValue}
+              >
                 {curElem}
               </button>
             );
@@ -74,7 +75,8 @@ const FilterSection = () => {
             name="company"
             id="company"
             className="filter-company--select"
-            onClick={updateFilterValue}>
+            onClick={updateFilterValue}
+          >
             {companyData.map((curElem, index) => {
               return (
                 <option key={index} value={curElem} name="company">
@@ -99,7 +101,8 @@ const FilterSection = () => {
                 name="color"
                 style={{ backgroundColor: curColor }}
                 className="btnStyle"
-                onClick={updateFilterValue}>
+                onClick={updateFilterValue}
+              >
                 {color === curColor ? "" : null}
               </button>
             );
