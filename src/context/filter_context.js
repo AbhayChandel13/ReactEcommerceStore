@@ -11,16 +11,18 @@ const initialState = {
   sorting_value: "lowest",
   filters: {
     text: "",
+    category:"all",
+    company:"all",  
   },
 };
 
-export const FilterContextProvider = ({ children }) => {
+export const FilterContextProvider = ({ children }) => {                                                            
   const { products } = useProductContext();
   const [state, dispatch] = useReducer(reducer, initialState);
 
   //to set the Grid View
   const setGridView = () => {
-    return dispatch({ type: "SET_GRID_VIEW" });
+    return dispatch({ type: "SET_GRID_VIEW" });     
   };
 
   //to set the List View
@@ -47,6 +49,7 @@ export const FilterContextProvider = ({ children }) => {
 
   //To Sort the products
   useEffect(() => {
+    dispatch({type: "FILTER_PRODUCTS"})
     dispatch({ type: "SORTING_PRODUCTS" });
   }, [products, state.sorting_value, state.filters]);
 
