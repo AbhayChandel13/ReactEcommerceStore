@@ -66,9 +66,6 @@ export const FilterContextProvider = ({ children }) => {
   );
 };
 
-
-
-
 export const useFilterContext = () => {
   return useContext(FilterContext);
 };
