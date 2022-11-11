@@ -13,7 +13,7 @@ const FilterSection = () => {
 
   const getUniqueData = (data, attr) => {
     let newVal = data.map((curElem) => {
-      return curElem[attr];
+      return curElem[attr]; 
     });
 
     if (attr === "colors") {
