@@ -12,7 +12,7 @@ const HeroSection = ({ myData }) => {
           <div className="hero-section-data">
             <div className="intro-data">Welcome to </div>
             <h1> {name}</h1>
-            <p>              
+            <p>
               Hwy You are in the Store , buy anything here, related to anything
               you want the Store , buy anything here, related to anything you
               want the Store , buy anything here, related to anything you want
