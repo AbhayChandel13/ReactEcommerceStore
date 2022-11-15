@@ -42,7 +42,7 @@ const AddToCart = ({ product }) => {
         setIncrease={setIncrease}
       />
 
-      <Button>        
+      <Button>
         <NavLink to="/cart" className="btn">
           Add To Cart
         </NavLink>
