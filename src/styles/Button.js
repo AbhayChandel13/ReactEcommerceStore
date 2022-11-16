@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
+  
+.btn{
   text-decoration: none;
   max-width: auto;
   background-color: rgb(98 84 243);
@@ -14,7 +16,8 @@ export const Button = styled.button`
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-
+}
+  
   &:hover,
   &:active {
     box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
