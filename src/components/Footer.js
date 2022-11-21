@@ -7,11 +7,11 @@ import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <Wrapper>
+    <Wrapper>
         <section className="contact-short">
           <div className="grid grid-two-column">
             <div>
-              <h3>Ready to get started?</h3>
+              <h3>Ready to get started?</h3>  
               <h3>Talk to us today</h3>
             </div>
 
@@ -27,11 +27,11 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Tech Store </h3>
+              <h3>Wowz Store</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
             </div>
             <div className="footer-subscribe">
-              <h3>Subscribe to get important updates</h3>
+              <h3> consectetur adipisicing elitto get important updates</h3>
               <form action="#">
                 <input type="email" name="email" placeholder="YOUR E-MAIL" />
 
@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
             <div className="footer-contact">
               <h3>Call Us</h3>
-              <h3>+91 3254564567</h3>
+              <h3>+91 12345678978</h3>
             </div>
           </div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} My Ecommerce Store. All Rights Reserved
+                @{new Date().getFullYear()} WOWZ Store . All Rights Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>

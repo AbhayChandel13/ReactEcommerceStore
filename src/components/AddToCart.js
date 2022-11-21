@@ -42,9 +42,11 @@ const AddToCart = ({ product }) => {
         setIncrease={setIncrease}
       />
 
-      <NavLink to="/cart">
-        <Button className="btn">Add To Cart</Button>
-      </NavLink>
+      <Button>
+        <NavLink to="/cart" className="btn">
+          Add To Cart
+        </NavLink>
+      </Button>
     </Wrapper>
   );
 };
@@ -62,6 +64,7 @@ const Wrapper = styled.section`
         height: 2rem;
         background-color: #000;
         border-radius: 50%;
+        margin-top: 1rem;
         margin-left: 1rem;
         border: none;
         outline: none;
@@ -79,7 +82,7 @@ const Wrapper = styled.section`
 
     .checkstyle{
         font-size: 1rem;
-        color: #fff;        
+        color: #fff;             
     }
 
     .amount-toggle{
