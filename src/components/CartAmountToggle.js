@@ -1,6 +1,7 @@
 import React from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
+//comments  added for the commit only here we go 
 const CartAmountToggle = ({ amount, setDecrease, setIncrease }) => {
   return (
     <div className="cart-button">
