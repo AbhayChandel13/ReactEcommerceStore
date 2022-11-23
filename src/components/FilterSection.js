@@ -17,14 +17,11 @@ const FilterSection = () => {
     });
 
     if (attr === "colors") {
-     //  return (newVal = ["All", ...new Set([].concat(...newVal))]);
+      //  return (newVal = ["All", ...new Set([].concat(...newVal))]);
       newVal = newVal.flat();
     }
-      return (newVal = ["all", ...new Set(newVal)]);
-  
-}
-
-    
+    return (newVal = ["all", ...new Set(newVal)]);
+  };
 
   // we need to have the individual data of each in an array format
   const categoryData = getUniqueData(all_products, "category");
@@ -33,7 +30,7 @@ const FilterSection = () => {
   //console.log(
   //   "🚀 ~ file: FilterSection.js ~ line 23 ~ FilterSection ~ companyData",
   //colorsData
-   //);
+  //);
 
   return (
     <Wrapper>
