@@ -136,6 +136,10 @@ const FilterSection = () => {
           onChange={updateFilterValue}
         />
       </div>
+
+      <div className="filter-clear">
+          <Button className="btn" onClick={clearFilters}>Clear Filters </Button>
+      </div>
     </Wrapper>
   );
 };
