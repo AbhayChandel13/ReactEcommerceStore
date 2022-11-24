@@ -25,7 +25,7 @@ const filterReducer = (state, action) => {
         "🚀 ~ file: filterReducer.js ~ line 23 ~ filterReducer ~ maxPrice",
         maxPrice
       );
-      
+
       return {
         ...state,
         filter_products: [...action.payload],
@@ -122,6 +122,18 @@ const filterReducer = (state, action) => {
       if (color !== "all") {
         tempFilterProduct = tempFilterProduct.filter((curElem) =>
           curElem.colors.includes(color)
+        );
+      }
+
+      if(price === 0){
+        tempFilterProduct =  tempFilterProduct.filter(
+          (curElem)=> curElem.price === price
+        );
+      }
+      else
+      {
+        tempFilterProduct =  tempFilterProduct.filter(
+          (curElem)=> curElem.price <= price
         );
       }
 
