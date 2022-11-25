@@ -13,7 +13,7 @@ root.render(
   <AppProvider>
     <FilterContextProvider>
       <CartProvider>
-      <App />
+        <App />
       </CartProvider>
     </FilterContextProvider>
   </AppProvider>
