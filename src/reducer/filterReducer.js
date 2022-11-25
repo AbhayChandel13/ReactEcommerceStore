@@ -7,7 +7,7 @@ const filterReducer = (state, action) => {
       //   priceArr
       // );
 
-      // 1way 
+      // 1way
       // console.log(Math.max.apply(null, priceArr));
 
       // let maxPrice = priceArr.reduce(
@@ -134,26 +134,25 @@ const filterReducer = (state, action) => {
         );
       }
 
-
       return {
         ...state,
         filter_products: tempFilterProduct,
       };
 
-      case "CLEAR_FILTERS":
-        return{
-          ...state,
-          filters:{
-            ...state.filters,
+    case "CLEAR_FILTERS":
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
           text: "",
           category: "all",
           company: "all",
           color: "all",
           maxPrice: 0,
           price: state.filters.maxPrice,
-          minPrice:state.filters.maxPrice,
-          }
-        }
+          minPrice: state.filters.maxPrice,
+        },
+      };
     default:
       return state;
   }
