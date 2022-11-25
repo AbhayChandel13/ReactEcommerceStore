@@ -15,9 +15,8 @@ const initialState = {
     company: "all",
     color: "all",
     maxPrice: 0,
-    price:0,
-    minPrice:0,
-
+    price: 0,
+    minPrice: 0,
   },
 };
 
@@ -69,7 +68,14 @@ export const FilterContextProvider = ({ children }) => {
 
   return (
     <FilterContext.Provider
-      value={{ ...state, setGridView, setListView, sorting, updateFilterValue , clearFilters }}
+      value={{
+        ...state,
+        setGridView,
+        setListView,
+        sorting,
+        updateFilterValue,
+        clearFilters,
+      }}
     >
       {children}
     </FilterContext.Provider>
