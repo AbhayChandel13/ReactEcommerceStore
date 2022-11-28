@@ -7,7 +7,10 @@ import { Button } from "../styles/Button";
 import { useCartContext } from "../context/cart_context";
 
 const AddToCart = ({ product }) => {
+  //comment 2
   //comment for the commit  added
+
+
   const { addToCart } = useCartContext();
   const { id, colors, stock } = product;
   const [color, setColor] = useState(colors[0]);
