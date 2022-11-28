@@ -9,7 +9,7 @@ import { useCartContext } from "../context/cart_context";
 const AddToCart = ({ product }) => {
   //comment 2
   //comment for the commit  added
- //comment 3
+  //comment 3
 
   const { addToCart } = useCartContext();
   const { id, colors, stock } = product;
