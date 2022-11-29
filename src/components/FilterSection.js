@@ -31,7 +31,7 @@ const FilterSection = () => {
   const companyData = getUniqueData(all_products, "company");
   const colorsData = getUniqueData(all_products, "colors");
   
-  //   "🚀 ~ file: 
+  // 
   //   colorsData
   // );
 
