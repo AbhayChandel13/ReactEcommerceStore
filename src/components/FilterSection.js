@@ -32,7 +32,7 @@ const FilterSection = () => {
   const colorsData = getUniqueData(all_products, "colors");
   
   
-  // );
+  
 
   return (
     <Wrapper>
