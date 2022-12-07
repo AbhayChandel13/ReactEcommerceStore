@@ -19,7 +19,4 @@ root.render(
   </AppProvider>
 );
 
-
-
-
 reportWebVitals();
