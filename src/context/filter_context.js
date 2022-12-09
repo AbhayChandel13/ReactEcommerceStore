@@ -49,7 +49,10 @@ export const FilterContextProvider = ({ children }) => {
       type: "UPDATE_FILTERS_VALUE",
       payload: { name, value },
     });
-  };
+  };                   
+
+
+
 
   // To clear the filter
   const clearFilters = () => {
