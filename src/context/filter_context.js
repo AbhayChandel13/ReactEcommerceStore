@@ -51,7 +51,7 @@ export const FilterContextProvider = ({ children }) => {
     });
   };
 
-  // to clear the filter
+  //To clear the filter
   const clearFilters = () => {
     dispatch({ type: "CLEAR_FILTERS" });
   };
