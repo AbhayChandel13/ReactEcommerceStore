@@ -51,12 +51,12 @@ export const FilterContextProvider = ({ children }) => {
     });
   };
 
-  //To clear the filter
+  // To clear the filter
   const clearFilters = () => {
     dispatch({ type: "CLEAR_FILTERS" });
   };
 
-  //To Sort the products
+  // To Sort the products
   useEffect(() => {
     dispatch({ type: "FILTER_PRODUCTS" });
     dispatch({ type: "SORTING_PRODUCTS" });
