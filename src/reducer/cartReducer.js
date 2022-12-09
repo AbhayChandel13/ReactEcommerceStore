@@ -5,7 +5,7 @@ const cartReducer = (state,action) => {
     }
   return (
     <div>
-      This is the cart page
+      This is the cart page 
     </div>
   )
 }
