@@ -44,7 +44,7 @@ const AddToCart = ({ product }) => {
         setIncrease={setIncrease}
       />
 
-     <NavLink to="/cart" onClick={() => addToCart(id, color, amount, product)}>
+      <NavLink to="/cart" onClick={() => addToCart(id, color, amount, product)}>
         <Button className="btn">Add To Cart</Button>
       </NavLink>
     </Wrapper>
@@ -105,6 +105,6 @@ const Wrapper = styled.section`
 // button{
 //   border: none;
 //   background-color: #fff;
-//   cursor: pointer;        
+//   cursor: pointer;
 // }
 export default AddToCart;
