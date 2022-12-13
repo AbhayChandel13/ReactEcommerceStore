@@ -7,11 +7,11 @@ import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-    <Wrapper>
+      <Wrapper>
         <section className="contact-short">
           <div className="grid grid-two-column">
             <div>
-              <h3>Ready to get started?</h3>  
+              <h3>Ready to get started?</h3>
               <h3>Talk to us today</h3>
             </div>
 
@@ -50,7 +50,8 @@ const Footer = () => {
                 <div>
                   <a
                     href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank">
+                    target="_blank"
+                  >
                     <FaYoutube className="icons" />
                   </a>
                 </div>
