@@ -44,7 +44,7 @@ const AddToCart = ({ product }) => {
         setIncrease={setIncrease}
       />
 
-      <NavLink to="/cart" onClick={() => addToCart(id, color, amount, product)}>
+     <NavLink to="/cart" onClick={() => addToCart(id, color, amount, product)}>
         <Button className="btn">Add To Cart</Button>
       </NavLink>
     </Wrapper>
@@ -94,12 +94,7 @@ const Wrapper = styled.section`
         font-size: 1.4rem;
     }
 
-    button{
-        border: none;
-        background-color: #fff;
-        cursor: pointer;        
-    }
-
+   
     .amount-style{
         font-size: 2rem;
         color: ${({ theme }) => theme.colors.btn};
@@ -107,5 +102,9 @@ const Wrapper = styled.section`
 }
    
 `;
-
+// button{
+//   border: none;
+//   background-color: #fff;
+//   cursor: pointer;        
+// }
 export default AddToCart;
