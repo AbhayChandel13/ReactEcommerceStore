@@ -21,9 +21,11 @@ const intialState = {
 const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, intialState);
 
+  //Add Items to the cart 
   const addToCart = (id, color, amount, product) => {
     dispatch({ type: "ADD_TO_CART", payload: { id, color, amount, product } });
   };
+
 //To remove the items from cart 
   const removeItem = (id) => {
     dispatch({ type: "REMOVE_ITEM", payload: id });
