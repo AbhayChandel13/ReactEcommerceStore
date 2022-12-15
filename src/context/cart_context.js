@@ -3,8 +3,17 @@ import reducer from "../reducer/cartReducer";
 
 const CartContext = createContext();
 
+const getLocalCartData=()=>{
+  let localCartData = localStorage.getItem("TheCart");
+  if(localCartData === []){ 
+    return[];
+  }
+  else{
+    return JSON.parse(localCartData);
+  }
+}
 const intialState = {
-  // cart: [],
+  cart: getLocalCartData(),
   total_item: "",
   total_amount: "",
   shipping_fee: 50000,
@@ -22,7 +31,7 @@ const CartProvider = ({ children }) => {
   }
 //To add the data in local storage 
       useEffect(()=>{
-        localStorage.setItem("theCart ", JSON.stringify(state.cart));
+        localStorage.setItem("TheCart", JSON.stringify(state.cart));
       },[state.cart]);
 
   return (
