@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { useCartContext } from "./context/cart_context";
 import CartItem from "./components/CartItem";
 import { NavLink } from "react-router-dom";
-import {Button} from "./styles/Button";
+import { Button } from "./styles/Button";
 
 const Cart = () => {
-  const { cart,clearCart } = useCartContext();
+  const { cart, clearCart } = useCartContext();
   console.log("Cart", cart);
   return (
     <Wrapper>
@@ -17,7 +17,7 @@ const Cart = () => {
           <p className="cart-hide"> Subtotal</p>
           <p> Remove </p>
         </div>
-        <hr />        
+        <hr />
         <div className="cart-item">
           {cart.map((curElem) => {
             return <CartItem key={curElem.id} {...curElem} />;
@@ -25,10 +25,13 @@ const Cart = () => {
         </div>
         <hr />
         <div className="cart-two-button">
-           <NavLink to="/products">
+          <NavLink to="/products">
             <Button>Continue Shopping</Button>
-           </NavLink>
-           <Button className="btn btn-clear" onClick={clearCart}> Clear Cart</Button>
+          </NavLink>
+          <Button className="btn btn-clear" onClick={clearCart}>
+            {" "}
+            Clear Cart
+          </Button>
         </div>
       </div>
     </Wrapper>

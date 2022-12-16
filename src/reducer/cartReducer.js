@@ -19,7 +19,7 @@ const cartReducer = (state, action) => {
       cart: [...state.cart, cartProduct],
     };
   }
- //Remove Items From Cart
+  //Remove Items From Cart
   if (action.type === "REMOVE_ITEM") {
     let updatedCart = state.cart.filter(
       (curItem) => curItem.id !== action.payload
@@ -30,14 +30,13 @@ const cartReducer = (state, action) => {
     };
   }
 
-  //To Clear the cart 
-  if(action.type === "CLEAR_CART"){
-    return{
+  //To Clear the cart
+  if (action.type === "CLEAR_CART") {
+    return {
       ...state,
-      cart:[],
-    }
+      cart: [],
+    };
   }
-
 
   return state;
 };
