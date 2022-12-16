@@ -6,7 +6,7 @@ import { Button } from "./styles/Button";
 
 const Cart = () => {
   const { cart, clearCart } = useCartContext();
-  console.log("Cart", cart);
+  // console.log("Cart", cart);
   return (
     <Wrapper>
       <div className="container">
