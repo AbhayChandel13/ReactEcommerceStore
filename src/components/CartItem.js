@@ -5,13 +5,13 @@ import CartAmountToggle from "./CartAmountToggle";
 import { useCartContext } from "../context/cart_context";
 
 const CartItem = ({ id, name, image, color, price, amount }) => {
-    const {removeItem} = useCartContext();
-    const setDecrease = () => {
-        // amount > 1 ? setAmount(amount - 1) : setAmount(1);
-      };
-      const setIncrease = () => {
-        // amount < stock ? setAmount(amount + 1) : setAmount(stock);
-      };
+  const { removeItem } = useCartContext();
+  const setDecrease = () => {
+    // amount > 1 ? setAmount(amount - 1) : setAmount(1);
+  };
+  const setIncrease = () => {
+    // amount < stock ? setAmount(amount + 1) : setAmount(stock);
+  };
 
   return (
     <div className="cart_heading grid grid-five-column">
@@ -28,34 +28,33 @@ const CartItem = ({ id, name, image, color, price, amount }) => {
             <div
               className="color-style"
               style={{ backgroundColor: color }}
-            >
-            </div>
+            ></div>
           </div>
         </div>
       </div>
-    {/* Price */}
-    <div className="cart-hide">
+      {/* Price */}
+      <div className="cart-hide">
         <p>
-            <FormatPrice price={price} />
+          <FormatPrice price={price} />
         </p>
-    </div>
-    {/* Quantity */}
-    <CartAmountToggle
+      </div>
+      {/* Quantity */}
+      <CartAmountToggle
         amount={amount}
         setDecrease={setDecrease}
         setIncrease={setIncrease}
       />
- 
-     {/* Subtotal */}
-        <div className="cart-hide">
-            <p> 
-                <FormatPrice price={price * amount} />
-            </p>
-        </div>
 
-        <div> 
-            <FaTrash className="remove_icon" onClick={()=> removeItem(id)} />
-        </div>
+      {/* Subtotal */}
+      <div className="cart-hide">
+        <p>
+          <FormatPrice price={price * amount} />
+        </p>
+      </div>
+
+      <div>
+        <FaTrash className="remove_icon" onClick={() => removeItem(id)} />
+      </div>
     </div>
   );
 };
