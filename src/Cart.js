@@ -29,7 +29,6 @@ const Cart = () => {
             <Button>Continue Shopping</Button>
           </NavLink>
           <Button className="btn btn-clear" onClick={clearCart}>
-            {" "}
             Clear Cart
           </Button>
         </div>
