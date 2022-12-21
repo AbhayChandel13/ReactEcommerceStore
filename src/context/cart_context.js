@@ -26,7 +26,7 @@ const CartProvider = ({ children }) => {
     dispatch({ type: "ADD_TO_CART", payload: { id, color, amount, product } });
   };
 
-  //To remove the items from cart
+  //To remove the itemsor discard  from cart
   const removeItem = (id) => {
     dispatch({ type: "REMOVE_ITEM", payload: id });
   };
