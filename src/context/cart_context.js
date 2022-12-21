@@ -21,12 +21,12 @@ const intialState = {
 const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, intialState);
 
-  //Add Items to the cart
+  //Add Items to the cart:
   const addToCart = (id, color, amount, product) => {
     dispatch({ type: "ADD_TO_CART", payload: { id, color, amount, product } });
   };
 
-  //To remove or discard the items from cart
+  //To remove or discard the items from cart:
   const removeItem = (id) => {
     dispatch({ type: "REMOVE_ITEM", payload: id });
   };
@@ -36,7 +36,7 @@ const CartProvider = ({ children }) => {
     dispatch({ type: "CLEAR_CART" });
   };
 
-  //To add the data in local storage
+  //To add the data in local storage:
   useEffect(() => {
     localStorage.setItem("TheCart", JSON.stringify(state.cart));
   }, [state.cart]);
