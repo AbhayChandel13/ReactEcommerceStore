@@ -32,6 +32,9 @@ const CartProvider = ({ children }) => {
   };
 
   //To Empty or clear the Cart Items:
+
+
+  
   const clearCart = () => {
     dispatch({ type: "CLEAR_CART" });
   };
