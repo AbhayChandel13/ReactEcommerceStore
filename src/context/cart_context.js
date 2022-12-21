@@ -31,7 +31,7 @@ const CartProvider = ({ children }) => {
     dispatch({ type: "REMOVE_ITEM", payload: id });
   };
 
-  //To clear the Cart Items :
+  //To Empty or clear the Cart Items:
   const clearCart = () => {
     dispatch({ type: "CLEAR_CART" });
   };
