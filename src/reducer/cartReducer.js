@@ -30,7 +30,7 @@ const cartReducer = (state, action) => {
     };
   }
 
-  //To Clearor empty the cart
+  //To Clear or empty the cart
   if (action.type === "CLEAR_CART") {
     return {
       ...state,
