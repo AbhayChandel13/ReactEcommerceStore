@@ -19,7 +19,7 @@ const cartReducer = (state, action) => {
       cart: [...state.cart, cartProduct],
     };
   }
-  //Remove or disc Items From Cart
+  //Remove or discard Items From Cart
   if (action.type === "REMOVE_ITEM") {
     let updatedCart = state.cart.filter(
       (curItem) => curItem.id !== action.payload
