@@ -6,8 +6,8 @@ import { Button } from "./styles/Button";
 
 const Cart = () => {
   const { cart, clearCart } = useCartContext();
-   console.log("Cart", cart);
-   if (cart.length === 0) {
+  console.log("Cart", cart);
+  if (cart.length === 0) {
     return (
       <EmptyDiv>
         <h3>No Cart in Item </h3>
