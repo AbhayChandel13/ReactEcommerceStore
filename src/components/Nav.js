@@ -7,7 +7,7 @@ import { useCartContext } from "../context/cart_context";
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState();
-  const {total_item} = useCartContext();
+  const { total_item } = useCartContext();
   return (
     <Wrapper>
       <div className={menuIcon ? "navbar active" : "navbar"}>

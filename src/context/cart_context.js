@@ -26,14 +26,14 @@ const CartProvider = ({ children }) => {
   const addToCart = (id, color, amount, product) => {
     dispatch({ type: "ADD_TO_CART", payload: { id, color, amount, product } });
   };
-   //Increment and decrement the product
-  const setDecrease =(id)=>{
-    dispatch  ({type: "SET_DECREMENT",  payload: id});
-  }  
-   
-  const setIncrease =(id)=>{
-    dispatch  ({type: "SET_INCREMENT",  payload: id});
-  }  
+  //Increment and decrement the product
+  const setDecrease = (id) => {
+    dispatch({ type: "SET_DECREMENT", payload: id });
+  };
+
+  const setIncrease = (id) => {
+    dispatch({ type: "SET_INCREMENT", payload: id });
+  };
 
   //To remove or discard the indiviual  item from cart:
   const removeItem = (id) => {
@@ -49,13 +49,20 @@ const CartProvider = ({ children }) => {
   useEffect(() => {
     // dispatch({type:"CART_TOTAL_ITEM"});
     // dispatch({type:"CART_TOTAL_PRICE"});
-    dispatch({type:"CART_ITEM_PRICE_TOTAL"})
+    dispatch({ type: "CART_ITEM_PRICE_TOTAL" });
     localStorage.setItem("TheCart", JSON.stringify(state.cart));
   }, [state.cart]);
 
   return (
     <CartContext.Provider
-      value={{ ...state, addToCart, removeItem, clearCart,setDecrease,setIncrease}}
+      value={{
+        ...state,
+        addToCart,
+        removeItem,
+        clearCart,
+        setDecrease,
+        setIncrease,
+      }}
     >
       {children}
     </CartContext.Provider>

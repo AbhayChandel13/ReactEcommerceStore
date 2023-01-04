@@ -5,7 +5,7 @@ import CartAmountToggle from "./CartAmountToggle";
 import { useCartContext } from "../context/cart_context";
 
 const CartItem = ({ id, name, image, color, price, amount }) => {
-  const { removeItem,setDecrease,setIncrease} = useCartContext();
+  const { removeItem, setDecrease, setIncrease } = useCartContext();
   // const setDecrease = () => {
   //    amount > 1 ? setAmount(amount - 1) : setAmount(1);
   // };
@@ -41,8 +41,8 @@ const CartItem = ({ id, name, image, color, price, amount }) => {
       {/* Quantity */}
       <CartAmountToggle
         amount={amount}
-        setDecrease={()=>setDecrease(id)}
-        setIncrease={()=>setIncrease(id)}
+        setDecrease={() => setDecrease(id)}
+        setIncrease={() => setIncrease(id)}
       />
 
       {/* Subtotal */}

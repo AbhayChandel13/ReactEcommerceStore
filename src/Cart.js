@@ -6,7 +6,7 @@ import { Button } from "./styles/Button";
 import FormatPrice from "./Helpers/FormatPrice";
 
 const Cart = () => {
-  const { cart, clearCart,total_price,shipping_fee } = useCartContext();
+  const { cart, clearCart, total_price, shipping_fee } = useCartContext();
   console.log("Cart", cart);
   if (cart.length === 0) {
     return (
@@ -46,19 +46,24 @@ const Cart = () => {
           <div className="order-total--subdata">
             <div>
               <p>subtotal:</p>
-              <p><FormatPrice price={total_price} /></p>
+              <p>
+                <FormatPrice price={total_price} />
+              </p>
             </div>
-          
+
             <div>
               <p>Shipping Fee:</p>
-              <p><FormatPrice price={shipping_fee} /></p>
+              <p>
+                <FormatPrice price={shipping_fee} />
+              </p>
             </div>
             <hr />
             <div>
               <p>Order Total:</p>
-              <p><FormatPrice price={shipping_fee + total_price} /></p>
+              <p>
+                <FormatPrice price={shipping_fee + total_price} />
+              </p>
             </div>
-
           </div>
         </div>
       </div>
