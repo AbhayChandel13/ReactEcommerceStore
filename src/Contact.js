@@ -1,7 +1,9 @@
+import { useAuth0 } from "@auth0/auth0-react";  
 import styled from "styled-components";
 
 const Contact = () => {
-  
+  const {isAuthenticated,user} = useAuth0
+  console.log(user);
   return (
     <Wrapper>
     <h2 className="common-heading">Contact page</h2>
@@ -25,6 +27,7 @@ const Contact = () => {
             type="text"
             placeholder="username"
             name="username"
+            value={isAuthenticated ? user.name : "" }
             required
             autoComplete="off"
           />
@@ -34,6 +37,7 @@ const Contact = () => {
             name="Email"
             placeholder="Email"
             autoComplete="off"
+            value={isAuthenticated ? user.email : "" }
             required
           />
 
