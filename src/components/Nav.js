@@ -10,7 +10,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState();
   const { total_item } = useCartContext();
-  const { isAuthenticated ,loginWithRedirect,logout,user } = useAuth0();
+  const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
   return (
     <Wrapper>
       <div className={menuIcon ? "navbar active" : "navbar"}>
@@ -51,22 +51,27 @@ const Nav = () => {
               Contact
             </NavLink>
           </li>
-          
-            {isAuthenticated && (<li><p>{user.name}</p></li>)}
-          
-          {
-            isAuthenticated ? (
+
+          {isAuthenticated && (
             <li>
-            <Button onClick={() => logout({ returnTo: window.location.origin })}>Log Out </Button>
+              <p>{user.name}</p>
             </li>
-            ) :(
-              <li>
+          )}
+
+          {isAuthenticated ? (
+            <li>
+              <Button
+                onClick={() => logout({ returnTo: window.location.origin })}
+              >
+                Log Out{" "}
+              </Button>
+            </li>
+          ) : (
+            <li>
               <Button onClick={() => loginWithRedirect()}>Log In</Button>
-              </li>
-            )
-          }
-        
-          
+            </li>
+          )}
+
           <li>
             <NavLink to="/cart" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" />
