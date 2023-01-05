@@ -13,21 +13,19 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // const clientId = process.env.REACT_APP_CLIENT_ID;
 
 root.render(
-  
   <AppProvider>
     <FilterContextProvider>
       <CartProvider>
-      <Auth0Provider
+        <Auth0Provider
           domain="dev-dm7r081voxlt31qx.us.auth0.com"
           clientId="n9PGAKaaeyJrtlOJWmghHhJErcBmrMd0"
           redirectUri={window.location.origin}
         >
           <App />
-          </Auth0Provider>
+        </Auth0Provider>
       </CartProvider>
     </FilterContextProvider>
   </AppProvider>
-  
 );
 
 reportWebVitals();
