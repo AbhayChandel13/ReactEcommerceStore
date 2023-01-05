@@ -20,7 +20,7 @@ const intialState = {
   // cart: getLocalCartData(),
   total_item: "",
   total_amount: "",
-  shipping_fee: 50000,
+  shipping_fee: 10000,
 };
 
 const CartProvider = ({ children }) => {
