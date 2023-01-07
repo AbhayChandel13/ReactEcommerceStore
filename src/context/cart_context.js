@@ -15,7 +15,6 @@ const CartContext = createContext();
 
 //   return parsedData;
 // };
-//comments added
 
 
 const intialState = {     
