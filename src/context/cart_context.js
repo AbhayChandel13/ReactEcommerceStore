@@ -17,7 +17,7 @@ const CartContext = createContext();
 // };
 //comments added
 //comments added
-//comments added
+
 const intialState = {     
   cart: [],
   // cart: getLocalCartData(),
