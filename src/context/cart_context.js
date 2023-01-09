@@ -17,8 +17,7 @@ const CartContext = createContext();
 //   return parsedData;
 // };
 
-
-const intialState = {     
+const intialState = {
   cart: [],
   // cart: getLocalCartData(),
   total_item: "",
@@ -28,7 +27,6 @@ const intialState = {
 
 const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, intialState);
- 
 
   //Add Items to the cart:
   const addToCart = (id, color, amount, product) => {
@@ -54,7 +52,6 @@ const CartProvider = ({ children }) => {
     dispatch({ type: "CLEAR_CART" });
   };
 
-  
   //To add the data in local storage:
   useEffect(() => {
     // dispatch({type:"CART_TOTAL_ITEM"});
