@@ -3,7 +3,6 @@ import reducer from "../reducer/cartReducer";
 
 const CartContext = createContext();
 
-//Code For local data:-
 // const getLocalCartData = () => {
 //   let localCartData = localStorage.getItem("TheCart");
 //   // if (localCartData === []) {
