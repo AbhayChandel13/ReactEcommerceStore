@@ -77,5 +77,8 @@ const CartProvider = ({ children }) => {
 const useCartContext = () => {
   return useContext(CartContext);
 };
-
+// dispatch({type:"CART_TOTAL_ITEM"});
+    // dispatch({type:"CART_TOTAL_PRICE"});// dispatch({type:"CART_TOTAL_ITEM"});
+    // dispatch({type:"CART_TOTAL_PRICE"});// dispatch({type:"CART_TOTAL_ITEM"});
+    // dispatch({type:"CART_TOTAL_PRICE"});
 export { CartProvider, useCartContext };
