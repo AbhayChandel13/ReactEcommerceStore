@@ -80,5 +80,5 @@ const useCartContext = () => {
     // dispatch({type:"CART_TOTAL_ITEM"});
     // dispatch({type:"CART_TOTAL_PRICE"});// dispatch({type:"CART_TOTAL_ITEM"});
     // dispatch({type:"CART_TOTAL_PRICE"});// dispatch({type:"CART_TOTAL_ITEM"});
-    // dispatch({type:"CART_TOTAL_PRICE"});
+  
 export { CartProvider, useCartContext };
