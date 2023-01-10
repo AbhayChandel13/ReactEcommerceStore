@@ -77,7 +77,5 @@ const CartProvider = ({ children }) => {
 const useCartContext = () => {
   return useContext(CartContext);
 };
-    // dispatch({type:"CART_TOTAL_ITEM"});
-  
   
 export { CartProvider, useCartContext };
