@@ -48,7 +48,7 @@ const SingleProduct = () => {
       <PageNavigation title={name} />
       <Container className="container">
         <div className="grid grid-two-column">
-          {/* product Images  */}
+          {/* product images  */}
           <div className="product-images">
             <MyImage imgs={image} />
           </div>
