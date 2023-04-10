@@ -53,7 +53,7 @@ const SingleProduct = () => {
             <MyImage imgs={image} />
           </div>
 
-          {/* product dAta  */}
+          {/* product data  */}
           <div className="product-data">
             <h2>{name}</h2>
             <Star stars={stars} reviews={reviews} />
