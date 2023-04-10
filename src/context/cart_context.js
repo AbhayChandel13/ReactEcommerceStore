@@ -32,7 +32,7 @@ const CartProvider = ({ children }) => {
     dispatch({ type: "ADD_TO_CART", payload: { id, color, amount, product } });
   };
 
-  //Increment and decrement the product:
+  //Increment and decrement of the product:
   const setDecrease = (id) => {
     dispatch({ type: "SET_DECREMENT", payload: id });
   };
