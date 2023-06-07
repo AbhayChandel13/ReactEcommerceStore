@@ -12,7 +12,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // const domain = process.env.REACT_APP_AUTH_DOMAIN;
 // const clientId = process.env.REACT_APP_CLIENT_ID;
 
-// const domain = process.env.REACT_APP_AUTH_DOMAIN;
 
 
 root.render(
