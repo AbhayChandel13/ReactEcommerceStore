@@ -41,7 +41,7 @@ const Cart = () => {
           </Button>
         </div>
 
-        {/* order total amount */}
+        {/* Order Total Amount */}
         <div className="order-total--amount">
           <div className="order-total--subdata">
             <div>
