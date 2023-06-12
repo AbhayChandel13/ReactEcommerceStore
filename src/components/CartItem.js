@@ -13,7 +13,6 @@ const CartItem = ({ id, name, image, color, price, amount }) => {
   // const setIncrease = () => {
   //    amount < stock ? setAmount(amount + 1) : setAmount(stock);
   // };
-  // const setIncrease = () => {
 
   return (
     <div className="cart_heading grid grid-five-column">
