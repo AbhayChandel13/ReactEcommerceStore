@@ -107,6 +107,7 @@ const cartReducer = (state, action) => {
   //     return initialVal;
   //   },0);
 
+  
   //   return{
   //     ...state,
   //     total_item : updatedItemVal,
