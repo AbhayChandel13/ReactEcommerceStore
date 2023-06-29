@@ -111,11 +111,7 @@ const cartReducer = (state, action) => {
   //     ...state,
   //     total_item : updatedItemVal,
   //   }
-  // }
-    //   return{
-  //     ...state,
-  //     total_item : updatedItemVal,
-  //   }
+
   // }
     //   return{
   //     ...state,
