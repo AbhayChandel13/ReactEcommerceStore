@@ -112,6 +112,11 @@ const cartReducer = (state, action) => {
   //     total_item : updatedItemVal,
   //   }
   // }
+    //   return{
+  //     ...state,
+  //     total_item : updatedItemVal,
+  //   }
+  // }
 
   // if(action.type === "CART_TOTAL_PRICE"){
   //   let total_price = state.cart.reduce((initialVal,curElem)=>{
