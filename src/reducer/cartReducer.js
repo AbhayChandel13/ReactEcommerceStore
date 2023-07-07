@@ -123,12 +123,13 @@ const cartReducer = (state, action) => {
   //     return initialVal;
   //   },0);
 
+  
   //   return{
   //     ...state,
   //     total_price,
   //   }
   // }
-  
+
 
   if (action.type === "CART_ITEM_PRICE_TOTAL") {
     let { total_item, total_price } = state.cart.reduce(
