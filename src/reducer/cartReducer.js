@@ -108,7 +108,7 @@ const cartReducer = (state, action) => {
   //   },0);
 
   // }
-    //   return{
+  //   return{
   //     ...state,
   //     total_item : updatedItemVal,
   //   }
@@ -123,7 +123,6 @@ const cartReducer = (state, action) => {
   //     return initialVal;
   //   },0);
 
-  
   //   return{
   //     ...state,
   //     total_price,
