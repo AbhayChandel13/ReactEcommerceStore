@@ -133,6 +133,7 @@ const cartReducer = (state, action) => {
 
   //comment one for the sake of daily activity.
   //comment no. 1
+  //comment no. 2 
 
   if (action.type === "CART_ITEM_PRICE_TOTAL") {
     let { total_item, total_price } = state.cart.reduce(
