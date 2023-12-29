@@ -44,7 +44,7 @@ const cartReducer = (state, action) => {
     }
   }
 
-  //To set the Increment and decrement 
+  //To set the Increment and decrement func 
   if (action.type === "SET_DECREMENT") {
     let updatedProduct = state.cart.map((curElem) => {
       if (curElem.id === action.payload) {
