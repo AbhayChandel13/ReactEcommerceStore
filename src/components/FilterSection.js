@@ -30,6 +30,7 @@ const FilterSection = () => {
   //console.log(
   //   "🚀 ~ file: FilterSection.js ~ line 23 ~ FilterSection ~ companyData",
   //colorsData
+  //colorsData
   //);
 
   return (
