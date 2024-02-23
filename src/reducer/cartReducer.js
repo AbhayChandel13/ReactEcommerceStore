@@ -131,7 +131,7 @@ const cartReducer = (state, action) => {
   //comment added 
  //comment two
  //comment one
- //comment 2.1
+ //comment 2
 
 
   if (action.type === "CART_ITEM_PRICE_TOTAL") {
