@@ -42,6 +42,7 @@ const Cart = () => {
         </div>
 
         {/* Order Total Amount */}
+        {/* comment 1 */}
 
         <div className="order-total--amount">
           <div className="order-total--subdata">
