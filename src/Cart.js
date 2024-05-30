@@ -43,7 +43,7 @@ const Cart = () => {
 
         {/* Order Total Amount */}
         {/* comment 1 
-            comment 2
+            
 
         */}
 
