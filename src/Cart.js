@@ -44,6 +44,7 @@ const Cart = () => {
         {/* Order Total Amount */}
         {/* 
           comment 1.
+          
         */}
 
         <div className="order-total--amount">
