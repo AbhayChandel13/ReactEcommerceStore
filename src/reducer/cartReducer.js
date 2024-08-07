@@ -130,8 +130,6 @@ const cartReducer = (state, action) => {
   // }
   //comment added 
   //comment 
- //comment 1
- //comment 1
  
 
 
