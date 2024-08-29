@@ -128,7 +128,7 @@ const cartReducer = (state, action) => {
   //     total_price,
   //   }
   // }
-   
+   //ends here
 
 
   if (action.type === "CART_ITEM_PRICE_TOTAL") {
