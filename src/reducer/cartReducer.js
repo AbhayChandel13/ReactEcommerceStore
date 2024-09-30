@@ -130,7 +130,7 @@ const cartReducer = (state, action) => {
   // }
    //ends here
   //comment 1
-  //comment 2
+  
 
   if (action.type === "CART_ITEM_PRICE_TOTAL") {
     let { total_item, total_price } = state.cart.reduce(
