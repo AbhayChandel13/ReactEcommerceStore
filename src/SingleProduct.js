@@ -68,7 +68,7 @@ const SingleProduct = () => {
               </del>
             </p>
             <p className="product-data-price product-data-real-price">
-              Deal of the Day: <FormatPrice price={price} />
+              Deals of the Day: <FormatPrice price={price} />
             </p>
             <p>{description}</p>
             <div className="product-data-warranty">
